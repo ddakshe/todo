@@ -1,0 +1,98 @@
+group 'com.kennen'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        javaVersion = '1.8'
+        springRepo = 'http://repo.spring.io/libs-release'
+    }
+
+    repositories {
+        println("build script spring repo")
+        maven { url springRepo }
+    }
+
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.1.2.RELEASE"
+    }
+}
+
+
+allprojects {
+    println("all project task")
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
+    
+    dependencies{
+        implementation 'org.projectlombok:lombok'
+        implementation "org.mockito:mockito-core:2.9.0"
+        implementation "org.mockito:mockito-inline:2.9.0"        
+    }
+    println("sub project task")
+}
+
+def javaProjects = [project(":core")]
+def bootProjects = [project(":api"), project(":auth")]
+
+configure(javaProjects) {
+    repositories {
+        mavenLocal()
+        maven { url springRepo }
+    }
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    dependencyManagement {
+        imports {
+            mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+        }
+    }
+
+    version = "1.0.0-SNAPSHOT"
+
+    targetCompatibility = javaVersion
+    sourceCompatibility = javaVersion
+
+
+    dependencies {
+        implementation 'org.slf4j:slf4j-api'
+        testCompile 'junit:junit'
+        testCompile 'org.mockito:mockito-core'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation 'org.hsqldb:hsqldb'
+    }
+}
+
+configure(bootProjects) {
+
+    dependencyManagement {
+        imports {
+            mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+        }
+    }
+
+    repositories {  
+        maven { url springRepo }
+    }
+
+    apply plugin: 'org.springframework.boot'
+
+    bootJar.enabled = false
+    jar.enabled = true
+
+
+    dependencies {
+        implementation project(':core')
+        testCompile 'junit:junit'
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation 'org.springframework.boot:spring-boot-starter-test'
+        implementation 'org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.4.RELEASE'
+    }
+
+    println('boot projects task')
+}
+

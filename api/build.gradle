@@ -1,0 +1,19 @@
+dependencies{
+    implementation project(':core')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'redis.clients:jedis'
+}
+
+bootJar{
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+
+println("build api project")
+
