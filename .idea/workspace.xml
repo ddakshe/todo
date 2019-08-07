@@ -8,7 +8,9 @@
     <option name="showLiveBeansGraph" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb9ef0c5-c443-453d-8cf9-38d4da9b8860" name="Default Changelist" comment="" />
+    <list default="true" id="eb9ef0c5-c443-453d-8cf9-38d4da9b8860" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/api/.gradle/" />
     <ignored path="$PROJECT_DIR$/auth/.gradle/" />
     <ignored path="$PROJECT_DIR$/core/.gradle/" />
@@ -20,9 +22,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -194,8 +193,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/com/kennen/config/WebConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="286">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -263,6 +262,9 @@
       <dir>$PROJECT_DIR$/core/src/main/java/com/kennen/error</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -325,9 +327,6 @@
       <JQLSearcher alias="Assigned to me" jql="assignee = currentUser()" />
     </searchers>
   </component>
-  <component name="JRebelWorkspace">
-    <option name="jrebelEnabledAutocompile" value="true" />
-  </component>
   <component name="JiraServerManager">
     <selected>-1</selected>
     <servers />
@@ -339,48 +338,15 @@
     <option name="height" value="1107" />
   </component>
   <component name="ProjectId" id="1OU5q1pRLIBQRgdwjuOt3GyFF5Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="todo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,7 +367,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564924961042" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565154565763" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -718,16 +684,18 @@
       <workItem from="1564756605996" duration="44000" />
       <workItem from="1564756690609" duration="88599000" />
       <workItem from="1565098809488" duration="259000" />
+      <workItem from="1565153680150" duration="829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88902000" />
+    <option name="totallyTimeSpent" value="89731000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1920" height="1107" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1107" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943116" visible="true" weight="0.17944622" />
+      <window_info id="JRebel" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49943116" visible="true" weight="0.18104367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -735,6 +703,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5005688" side_tool="true" weight="0.30718955" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Executor" />
+      <window_info anchor="bottom" id="JIRA" />
+      <window_info anchor="bottom" id="Reviews" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32982087" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.672209" />
@@ -744,17 +716,20 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.34040046" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34034035" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Problems" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32982087" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.34434435" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.34434435" />
       <window_info anchor="bottom" id="Database Console" order="17" />
       <window_info anchor="bottom" id="TypeScript" order="18" weight="0.32982087" />
       <window_info anchor="bottom" id="Messages" order="19" weight="0.32982087" />
+      <window_info anchor="right" id="News Feed" />
+      <window_info anchor="right" id="JRebel Setup Guide" visible="true" weight="0.32960597" />
+      <window_info anchor="right" id="JSON Viewer" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24969475" />
@@ -764,7 +739,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Gradle" order="7" weight="0.22039072" />
       <window_info anchor="right" id="Key Promoter X" order="8" />
-      <window_info anchor="right" id="Database" order="9" visible="true" weight="0.16347177" />
+      <window_info anchor="right" id="Database" order="9" weight="0.16347177" />
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info anchor="right" id="Theme Preview" order="11" />
       <window_info anchor="right" id="Bean Validation" order="12" />
@@ -1190,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/kennen/config/WebConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="286">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
