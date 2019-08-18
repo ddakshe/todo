@@ -1,7 +1,2 @@
 server:
   port: 8082
-logging:
-  level:
-    root: error
-    org.springframework: info
-    org.springframework.security: debug
