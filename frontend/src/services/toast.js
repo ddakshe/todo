@@ -9,10 +9,13 @@ const toast = {
       position: 'center'
     });
   },
-  error: (data, title = 'Error') => {
+  serverError: (data) => {
+    toast.error('Server Error')
+  },
+  error: (message, title = 'Error') => {
     return iZtoast.error({
       title: title,
-      message: data.message,
+      message: message,
       position: 'bottomCenter'
     });
   },

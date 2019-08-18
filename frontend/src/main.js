@@ -15,8 +15,10 @@ axios.interceptors.response.use(
   },
   function (error) {
     // handle error
-    if (error.response && error.response.data)
-      toast.error(error.response.data)
+    if (error.message === 'Network Error')
+      toast.serverError();
+    else
+      toast.error(error.response.data.message)
   });
 
 Vue.config.productionTip = false
