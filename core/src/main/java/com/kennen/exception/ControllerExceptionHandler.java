@@ -26,10 +26,12 @@ public class ControllerExceptionHandler {
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(value = RedisConnectionFailureException.class)
     public ResponseEntity<ExceptionResponse> invalidTokenException(){
+        KennenException.ExceptionType redisConnectionFailureException = KennenException.ExceptionType.REDIS_CONNECTION_FAILURE_EXCEPTION;
         return new ResponseEntity<>(ExceptionResponse.builder()
-                .status(KennenException.ExceptionType.REDIS_CONNECTION_FAILURE_EXCEPTION.getStatus())
-                .code(KennenException.ExceptionType.REDIS_CONNECTION_FAILURE_EXCEPTION.getCode())
-                .error(KennenException.ExceptionType.REDIS_CONNECTION_FAILURE_EXCEPTION.getMessage())
+                .status(redisConnectionFailureException.getStatus())
+                .code(redisConnectionFailureException.getCode())
+                .error(redisConnectionFailureException.getCode())
+                .message(redisConnectionFailureException.getMessage())
                 .build(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 

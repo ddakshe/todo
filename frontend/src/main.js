@@ -9,15 +9,14 @@ import toast from "./services/toast";
 
 
 axios.interceptors.response.use(
-  function(response) {
+  function (response) {
     toast.success(response.config.method);
     return response;
-    },
-  function(error) {
+  },
+  function (error) {
     // handle error
-    if (error.response) {
-      toast.error(error.response.status);
-    }
+    if (error.response && error.response.data)
+      toast.error(error.response.data)
   });
 
 Vue.config.productionTip = false
